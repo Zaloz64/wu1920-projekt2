@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    font-family: Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif; 
+}
+
+.title {
+    font-size: 24px;
+    padding-left: 35%;
+}
+
+
+/* Logo that will follow be fixed */
+.header {
+    border-style: solid;
+    border-width: 0 0 2px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px 5px 2px 5px;
+    justify-content: space-evenly;
+}
+
+.logo {
+    max-height: auto;
+    max-width: 250px;
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
+}
+
+.header #menu {
+    grid-area: menu;
+    height: 30px;
+    width: 30px;
+    padding-right: 5px;
+    position: absolute;
+    right: 5px;
+}
+
+/* All the content down bellow
+    + First box */
+
+.box {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 20px auto auto 20px;
+    grid-template-areas: ". text text ."
+                        ". img img .";
+    
+
+    background-color: #F2F2F2; 
+    padding: 20px 0 20px 0;
+}
+
+.text {
+    border-style: solid;
+    border-width: 1px 0 1px 0;
+    border-color: #C4C4C4;
+    padding: 4px 15px 4px 15px;
+    max-width: 100%;
+}
+
+.box div {
+    grid-area: text;
+}
+
+.box img {
+    max-width: 100%;
+    max-height: auto;
+    grid-area: img;
+    padding-top: 15px;
+}
+
+/* box numero 2 */
+
+.box2 {
+    background-color: #e3e3e3;
+    display: block;
+}
+
+.content {
+    margin-bottom: 10px;
+}
+
+.boxy {
+    height: 200px;
+    width: 300px;
+    background-color: aquamarine;
+    padding: 15px;
+}
+
+/* box numero tres */
+
+.box3 {
+    display: block;
+}
+
