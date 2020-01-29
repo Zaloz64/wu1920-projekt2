@@ -8,6 +8,13 @@
     padding-left: 35%;
 }
 
+.text {
+    border-style: solid;
+    border-width: 1px 0 1px 0;
+    border-color: #C4C4C4;
+    padding: 4px 15px 4px 15px;
+    max-width: 100%;
+}
 
 /* Logo that will follow be fixed */
 .header {
@@ -42,58 +49,94 @@
 /* All the content down bellow
     + First box */
 
-.box {
+.grid {
     display: grid;
     grid-template-rows: auto;
-    grid-template-columns: 20px auto auto 20px;
-    grid-template-areas: ". text text ."
-                        ". img img .";
-    
+    grid-template-columns: 20px auto 20px;
+    grid-template-areas: ". section1 ."
+                        ". image ."
+                        ". section2 ."
+                        ". section3 ."
+                        "footer footer footer";
+    background-color: #F2F2F2;
+}
 
-    background-color: #F2F2F2; 
+.section1 {
     padding: 20px 0 20px 0;
+    grid-area: section1;
 }
 
-.text {
-    border-style: solid;
-    border-width: 1px 0 1px 0;
-    border-color: #C4C4C4;
-    padding: 4px 15px 4px 15px;
-    max-width: 100%;
+#image {
+    width: 100%;
+    grid-area: image;
+    padding-bottom: 20px;
 }
 
-.box div {
-    grid-area: text;
-}
+/* Section two of the page. Services */
 
-.box img {
-    max-width: 100%;
-    max-height: auto;
-    grid-area: img;
-    padding-top: 15px;
-}
+.section2 {
+    padding: 20px 0 20px 0;
 
-/* box numero 2 */
-
-.box2 {
+    grid-area: section2;
     background-color: #e3e3e3;
+}
+
+.textbox1 {
+    border-width: 1px 0 0 0;
+}
+
+.slider {
+    width: auto;
+    height: 150px;
+    display: flex;
+    overflow-x: auto;
+  }
+  .slide {
+    width: auto;
+    flex-shrink: 0;
+    height: 100%;
+  }
+
+  
+
+/* Section three of the page. Contact us */
+
+.section3 {
+    padding: 20px 0 20px;
+    grid-area: section3;
+}
+
+#contact-form {
+    margin: 20px 0 20px 0;
+    padding-bottom: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+}
+
+.inputarea {
+    border-style: solid;
+    border-width: 0 0 1px 0;
+    border-color: #2D9026;
     display: block;
+    padding: 5px;
 }
 
-.content {
-    margin-bottom: 10px;
-}
-
-.boxy {
-    height: 200px;
-    width: 300px;
-    background-color: aquamarine;
-    padding: 15px;
-}
-
-/* box numero tres */
-
-.box3 {
+.button {
+    border-width: 1px;
+    border-color: #2D9026;
+    background-color: #F2F2F2;
     display: block;
+    margin: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
+
+/* Section four of the page. Footer */
+
+.section4 {
+    padding: 20px 0 20px 0;
+    grid-area: footer;
+}
+
+
 
