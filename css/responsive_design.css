@@ -1,0 +1,56 @@
+
+
+/* responosve design för 
+
+360×640
+1366×768
+1920×1080
+768×1024 */
+
+
+@media screen and (min-width: 768px) {
+
+    .title {
+        font-size: 64px;
+    }
+    
+    .text {
+        border-width: 2px 0 2px 0;
+        border-color: #C4C4C4;
+        padding: 4px 15px 4px 15px;
+        max-width: 100%;
+        font-size: 24px;
+    }
+    
+    /* Section2 */
+    
+    #boxes {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .textbox2 {
+        max-width: 50%;
+        border-width: 0 0 2px 0;
+    }
+    
+    #spacebox {
+        padding-right: 10px;
+    }
+    /* Section 3 */
+    
+    #contact-form {
+        max-width: 75%;
+    }
+    
+    
+    
+}
+    
+    
+    
+    
+    
+    
+    
+    

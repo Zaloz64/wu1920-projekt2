@@ -5,7 +5,8 @@
 
 .title {
     font-size: 24px;
-    padding-left: 35%;
+    display: flex;
+    justify-content: center;
 }
 
 .text {
@@ -14,6 +15,10 @@
     border-color: #C4C4C4;
     padding: 4px 15px 4px 15px;
     max-width: 100%;
+}
+
+.subheading {
+    font-weight: 700;
 }
 
 /* Logo that will follow be fixed */
@@ -52,17 +57,17 @@
 .grid {
     display: grid;
     grid-template-rows: auto;
-    grid-template-columns: 20px auto 20px;
-    grid-template-areas: ". section1 ."
-                        ". image ."
-                        ". section2 ."
-                        ". section3 ."
-                        "footer footer footer";
+    grid-template-columns: auto;
+    grid-template-areas: "section1"
+                        "image"
+                        "section2"
+                        "section3"
+                        "footer";
     background-color: #F2F2F2;
 }
 
 .section1 {
-    padding: 20px 0 20px 0;
+    padding: 20px;
     grid-area: section1;
 }
 
@@ -75,8 +80,7 @@
 /* Section two of the page. Services */
 
 .section2 {
-    padding: 20px 0 20px 0;
-
+    padding: 20px;
     grid-area: section2;
     background-color: #e3e3e3;
 }
@@ -85,24 +89,31 @@
     border-width: 1px 0 0 0;
 }
 
-.slider {
+.filler {
+    background-color: yellow;
+    width: 80%;
+    padding: 50px 0 0 0;
+    margin: 20px;
+}
+
+/* .slider {
     width: auto;
     height: 150px;
     display: flex;
     overflow-x: auto;
-  }
-  .slide {
+}
+
+.slide {
     width: auto;
     flex-shrink: 0;
     height: 100%;
-  }
+} */
 
-  
 
 /* Section three of the page. Contact us */
 
 .section3 {
-    padding: 20px 0 20px;
+    padding: 20px;
     grid-area: section3;
 }
 
@@ -111,32 +122,61 @@
     padding-bottom: 20px;
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-
+    grid-area: form;
 }
+/* 
+.inputs {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
+} */
 
 .inputarea {
     border-style: solid;
     border-width: 0 0 1px 0;
     border-color: #2D9026;
+    color: #2D9026;
     display: block;
-    padding: 5px;
+    padding: 7px;
+    width: 80%;
 }
 
 .button {
     border-width: 1px;
     border-color: #2D9026;
+    color: #2D9026;
     background-color: #F2F2F2;
     display: block;
     margin: 5px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 40%;
+    margin-top: 20px;
+}
+
+.slogo {
+    background-color: #333333;
+    color: white;
+    padding: 5px;
+    font-size: 32px;
+    display: flex;
+    justify-content: center;
 }
 
 /* Section four of the page. Footer */
 
 .section4 {
-    padding: 20px 0 20px 0;
     grid-area: footer;
+    background-color: #333333;
 }
 
+.footer-header {
+    background-color:  #333333;
+}
 
-
+.contact {
+    color: white;
+    padding: 5px;
+    border-style: solid;
+    border-width: 0 0 1px 0;
+}
