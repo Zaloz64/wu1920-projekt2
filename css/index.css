@@ -80,6 +80,12 @@
 /* Section two of the page. Services */
 
 .section2 {
+    grid-template-rows: repeat(4, 100vw);
+    grid-template-columns: auto;
+    grid-template-areas: "box1"
+                         "box2"
+                         "box3"
+                         "box4";
     padding: 20px;
     grid-area: section2;
     background-color: #e3e3e3;
@@ -87,13 +93,7 @@
 
 .textbox1 {
     border-width: 1px 0 0 0;
-}
-
-.filler {
-    background-color: yellow;
-    width: 80%;
-    padding: 50px 0 0 0;
-    margin: 20px;
+    grid-area: box1;
 }
 
 /* .slider {
@@ -101,13 +101,18 @@
     height: 150px;
     display: flex;
     overflow-x: auto;
+    margin: 20px 0 0 0;
+    background-color: #F2F2F2;
+    grid-area: box4;
+    
 }
 
 .slide {
-    width: auto;
+    width: 100%;
     flex-shrink: 0;
     height: 100%;
 } */
+
 
 
 /* Section three of the page. Contact us */
@@ -117,30 +122,38 @@
     grid-area: section3;
 }
 
+#infobox {
+    grid-area: infobox;
+}
+
 #contact-form {
     margin: 20px 0 20px 0;
     padding-bottom: 20px;
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     grid-area: form;
+    height: 400px;
+    grid-area: form;
 }
-/* 
+
 .inputs {
     display: flex;
-    justify-content: center;
     flex-direction: column;
-    justify-content: space-around;
-} */
+    align-items: center;
+}
 
 .inputarea {
     border-style: solid;
     border-width: 0 0 1px 0;
     border-color: #2D9026;
     color: #2D9026;
-    display: block;
-    padding: 7px;
     width: 80%;
+    padding: 20px 5px 5px 5px;
 }
+
+.inputarea::placeholder{
+    color: #2D9026;
+  }
 
 .button {
     border-width: 1px;
