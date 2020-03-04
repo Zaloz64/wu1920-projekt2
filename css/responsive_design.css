@@ -37,20 +37,45 @@
     #spacebox {
         padding-right: 10px;
     }
-    /* Section 3 */
     
-    #contact-form {
-        max-width: 75%;
-    }
-    
-    
-    
+/* section 3 */
+
+
+#devider {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
 }
-    
-    
-    
-    
-    
-    
-    
-    
+
+#contact-form {
+    max-width: 400px;
+}
+
+}
+
+@media screen and (min-width: 1024px) {
+
+    #devider {
+        display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto; 
+    grid-template-areas: "infobox form";
+    }
+
+    .infobox {
+        margin-right: 20px;
+        height: auto;        
+    }
+
+    .infotitle {
+        justify-content: start;
+        width: 400px;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+    } 
+
+    #contact-form {
+        height: 500px;
+    }
+}
