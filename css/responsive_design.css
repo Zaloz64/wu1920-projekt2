@@ -11,7 +11,7 @@
 @media screen and (min-width: 768px) {
 
     .title {
-        font-size: 64px;
+        font-size: 50px;
     }
     
     .text {
@@ -30,7 +30,6 @@
     }
     
     .textbox2 {
-        max-width: 50%;
         border-width: 0 0 2px 0;
     }
     
@@ -42,40 +41,51 @@
 
 
 #devider {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto; 
+    grid-template-areas: "infobox form";    
+}
+
+.infobox {
+    margin-right: 20px;
+    height: auto;        
+}
+
+.infotitle {
+    justify-content: start;
+    width: 400px;
+    margin: 0;
     display: flex;
-    flex-direction: column;
-    justify-content: center;  
+    justify-content: center;
 }
 
 #contact-form {
     max-width: 400px;
 }
 
+.button {
+    font-size: 30px;
 }
 
-@media screen and (min-width: 1024px) {
+/* Footer */
 
-    #devider {
-        display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto; 
-    grid-template-areas: "infobox form";
-    }
-
-    .infobox {
-        margin-right: 20px;
-        height: auto;        
-    }
-
-    .infotitle {
-        justify-content: start;
-        width: 400px;
-        margin: 0;
-        display: flex;
-        justify-content: center;
-    } 
-
-    #contact-form {
-        height: 500px;
-    }
+#contact-information {
+    display: flex;
 }
+
+.contact2 {
+    border-style: solid;
+    border-width: 0 1px 0 0;
+}
+
+.contact {
+width: 50%;
+}
+} 
+
+
+
+/* @media screen and (min-width: 1024px) {
+    
+} */
