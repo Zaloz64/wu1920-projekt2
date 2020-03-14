@@ -89,18 +89,8 @@ width: 50%;
 @media screen and (min-width: 1024px) {
     
 .section1 {
-    display: grid;
-    grid-template-columns: 2;
-    grid-template-rows: 1;
-    grid-template-areas: "intro_text intro_image";
+    grid-template-areas: "intro_text image";
 }
 
-.devider2 {
-    grid-area: intro_text;
-}
-
-.section1 div img {
-    grid-area: intro_image;
-}
 
 }
