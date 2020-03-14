@@ -51,22 +51,28 @@
     right: 5px;
 }
 
-/* All the content down bellow
-    + First box */
+/* All the content down bellow */
 
 .grid {
     display: grid;
     grid-template-rows: 4;
     grid-template-columns: auto;
     grid-template-areas: "section1"
-                        "image"
                         "section2"
                         "section3"
                         "footer";
     background-color: #F2F2F2;
 }
 
+/* first section */
+
 .section1 {
+    display: grid;
+    grid-template-columns: 2;
+    grid-template-rows: 1;
+    grid-template-areas: "intro_text"
+                         "image";
+    
     padding: 20px;
     grid-area: section1;
 }
@@ -74,7 +80,10 @@
 #image {
     width: 100%;
     grid-area: image;
-    padding-bottom: 20px;
+    padding: 20px 0 0 0;
+}
+.devider2 {
+    grid-area: intro_text;
 }
 
 /* Section two of the page. Services */
