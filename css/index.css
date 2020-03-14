@@ -56,7 +56,7 @@
 
 .grid {
     display: grid;
-    grid-template-rows: auto;
+    grid-template-rows: 4;
     grid-template-columns: auto;
     grid-template-areas: "section1"
                         "image"
