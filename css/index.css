@@ -107,17 +107,27 @@
 }
 
 .slide_show {
-    margin: 20px;
-    width: auto;
-    height: 150px;
-
+    margin: 20px 0 0 0;
     grid-area: box4;
+}
+
+.slides {
+    display: flex;
+    align-items: center;
+}
+
+.slides button {
+    max-width: 40px;
+    margin: 0 10px 0 10px;
+    font-size: 30px;
 }
 
 .slide {
     height: 100%;
     padding: 4px 15px 4px 15px;
 }
+
+
 
 
 /* Section three of the page. Contact us */
@@ -212,12 +222,12 @@
 
 .footer-header {
     background-color:  #333333;
-    padding: 20 0 0 0;
+    padding: 20px 0 0 0;
 }
 
 .contact {
     color: white;
-    margin: 20px;
+    margin: 40px 40px 0 40px;
 }
 
 .contact2 {
