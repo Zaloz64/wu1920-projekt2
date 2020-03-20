@@ -26,7 +26,7 @@
     
     #boxes {
         display: grid;
-        grid-template-columns: 1fr 70px 1fr;
+        grid-template-columns: 1fr 20px 1fr;
         grid-template-rows: auto; 
         grid-template-areas: "left . right";
     }
@@ -48,14 +48,13 @@
 
 #devider {
     display: grid;
-    grid-template-columns: 1fr 70px 1fr;
+    grid-template-columns: 1fr 20px 1fr;
     grid-template-rows: auto; 
     grid-template-areas: "infobox . form"; 
     justify-content: center;    
 }
 
 .infobox {
-    margin-right: 20px;
     height: auto;        
 }
 
@@ -68,6 +67,7 @@
 
 #contact-form {
     width: 100%;
+    margin-top: 0;
 }
 
 .button {
@@ -115,11 +115,6 @@
 
 .section3 {
     padding: 70px;
-}
-
-#contact-form {
-    margin: 0 0 0 60px;
-    max-width: 100%;
 }
 
 .slogo {
